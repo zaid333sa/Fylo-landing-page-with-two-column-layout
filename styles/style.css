@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.header-content {
+    padding: 3% 5%;
+}
+.header .header-content .navbar {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    margin-bottom: 50px;
+}
+.header .header-content .navbar .logo {
+    height: 60%;
+}
+.header .header-content .navbar .links {
+    display: flex;
+    align-items: center;
+}
+.header .header-content .navbar .links li a {
+    padding: 0 15px;
+    color: var(--Very-Dark-Blue);
+}
+.header-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-main-content .left {
+    flex-basis: 50%;
+}
+.header-main-content .left h1 {
+    color: var(--Very-Dark-Blue);
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.header-main-content .left p {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 15px;
+}
+.header-main-content .left .signup {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.header-main-content .left .signup input[type=email] {
+    font-family: "Open Sans", sans-serif;
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.263);
+    border-radius: 5px;
+}
+.header-main-content .left .signup input[type=submit] {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding: 10px 40px;
+    margin-left: 15px;
+    background-color: var(--Bright-Blue);
+    color: white;
+    border: 1px solid var(--Bright-Blue);
+    border-radius: 5px;
+
+}
+.header-main-content .right img {
+    width: 500px;
+}
+
+/* .header > img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+} */
+
+@media (max-width: 767px) {
+    .header-main-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .header-main-content .right img {
+        width: 70%;
+        margin-bottom: 15px;
+    }
+    .header-main-content .left {
+        flex-basis: 100%;
+    }
+    .header-main-content .left h1 {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        font-size: 25px;
+    }
+    .header-main-content .left p {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .header-main-content .left .signup {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-main-content .left .signup input[type=email] {
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+    .header-main-content .left .signup input[type=submit] {
+        margin: auto;
+        width: 100%;
+    
+    }
+}
+
+.second-container > img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.second {
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    align-items: center;
+    padding: 70px 5%;
+    justify-content: space-between;
+}
+.second .left {
+    flex-basis: 50%;
+}
+.second .right img {
+    width: 500px;
+}
+.second .left h1 {
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 30px;
+}
+.second .left > p {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 15px;
+}
+.second .left .see-how {
+    display: flex;
+    color: var(--Moderate-Cyan);
+    border-bottom: 1px solid var(--Moderate-Cyan);
+    padding-bottom: 5px;
+    width: fit-content;
+}
+.second .left .see-how p {
+    font-family: "Open Sans", sans-serif;
+    margin-right: 5px;
+}
+.second .left .quote {
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.084);
+    width: fit-content;
+}
+.second .left .quote > p {
+    max-width: 300px;
+}
+.second .left .quote .user {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.second .left .quote .user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.second .left .user-info p:first-of-type {
+    font-weight: bold;
+    font-size: 14px;
+}
+.second .left .user-info p:last-of-type {
+    font-size: 13px;
+}
+@media (max-width: 767px) {
+    .second {
+        flex-direction: column-reverse;
+        padding: 30px 5%;
+        justify-content: center;
+        text-align: center;
+    }
+    .second .left {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .second .right img {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .second .left .quote {
+        text-align: start;
+    }
+}
+
+.signup-main {
+    background-color: var(--Desaturated-Blue);
+    padding: 70px 5%;
+    display: flex;
+    align-items: center;
+}
+.signup-main .left {
+    flex-basis: 60%;
+}
+.signup-main .left h1 {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+.signup-main .left p {
+    font-family: "Open Sans", sans-serif;
+    color: rgba(255, 255, 255, 0.664);
+    font-size: 14px;
+    line-height: 1.6;
+}
+.signup-main .right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+.signup-main .right input[type=email] {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+}
+.signup-main .right input[type=submit] {
+    background-color: var(--Bright-Blue);
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+}
+@media (max-width: 767px) {
+    .signup-main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .signup-main .right {
+        flex-basis: 100%;
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .signup-main .right input[type=email] {
+        width: 96%;
+    }
+    .signup-main .right input[type=submit] {
+        width: 100%;
+    }
+}
+
+.footer {
+    background-color: var(--Very-Dark-Blue);
+}
+.footer-container > img {
+    margin-bottom: 20px;
+}
+.footer .content {
+    padding: 70px 5%;
+}
+.footer .links {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.7);
+}
+.links .first-lists li {
+    display: flex;
+    margin-bottom: 15px;
+}
+.links .first-lists li img {
+    margin-right: 15px;
+}
+.second-list li {
+    margin: 15px;
+}
+.second-list li a {
+    color: rgba(255, 255, 255, 0.7);
+}
+.third-list li {
+    margin: 15px;
+}
+.third-list li a {
+    color: rgba(255, 255, 255, 0.7);
+}
+.social-container {
+    display: flex;
+}
+.social-container .social-box {
+    margin: 0 15px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: fit-content;
+}
+@media (max-width: 767px) {
+    .footer .links {
+        flex-direction: column;
+    }
+    .social-container {
+        align-items: center;
+        justify-content: center;
+    }
+}
